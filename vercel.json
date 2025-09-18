@@ -2,10 +2,14 @@
   "version": 2,
   "builds": [
     { "src": "index.html", "use": "@vercel/static" },
-    { "src": "tv.html", "use": "@vercel/static" }
+    { "src": "tv.html", "use": "@vercel/static" },
+    { "src": "header.html", "use": "@vercel/static" },
+    { "src": "footer.html", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/", "dest": "index.html" },
-    { "src": "/tv", "dest": "tv.html" }
+    { "src": "/tv", "dest": "tv.html" },
+    { "src": "/header.html", "dest": "header.html" },
+    { "src": "/footer.html", "dest": "footer.html" }
   ]
 }
