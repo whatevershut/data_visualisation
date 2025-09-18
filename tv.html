@@ -1,0 +1,154 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <title>Television Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--include css for footer and header-->
+    <link  rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+     <link rel="stylesheet" href="css/tv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    
+
+</head>
+<body>
+
+    <!--header-->
+    <section>
+    <div class="hero-content" id="header-container"></div>
+    </section>
+ 
+ 
+<main>
+
+     <!-- Page Header -->
+    <section class="page-header">
+        <h1>TV Collection</h1>
+        <p>Discover the TV Technologies and Specifications</p>
+    </section>
+
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="products-grid">
+            <!-- TV 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/tv1.jpeg" alt="Samsung OLED TV">
+                </div>
+                <div class="product-info">
+                    <h3>Samsung Crystal</h3>
+                    
+                </div>
+                <div class="product-details">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>LCD (LED)</li>
+                        <li>Model No : UA32T5300AS</li>
+                        <li>Screen Size: 80 inch</li>
+                        <li>Star : 5.5</li>
+                       
+                    </ul>
+                   
+                </div>
+            </div>
+
+            <!-- TV 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/tv2.jpg" alt="Samsung TV">
+                </div>
+                <div class="product-info">
+                    <h3>Samsung Electronics</h3>
+                </div>
+                <div class="product-details">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>LCD (LED)</li>
+                        <li>Model No : QA65QN3EFAS</li>
+                        <li>Screen Size: 163 inch</li>
+                        <li>Star : 4.5</li>
+                       
+                    </ul>
+                   
+                </div>
+            </div>
+
+            <!-- TV 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/tv5.png" alt="Sony Bravia TV">
+                </div>
+                <div class="product-info">
+                    <h3>LG QLED</h3>
+                </div>
+                <div class="product-details">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>OLED</li>
+                        <li>Model No : OLED48G56LS</li>
+                        <li>Screen Size: 120 inch</li>
+                        <li>Star : 5.5</li>
+                       
+
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+</section>
+</main>
+
+
+
+
+      <!---footer-->
+    <section>
+    <div id="footer-container"></div>
+    </section>
+
+
+    
+
+    <script>
+
+       function loadComponent(id,file){
+        fetch(file).then(response=> response.text()).then(data=>
+            { document.getElementById(id).innerHTML=data;
+
+            }
+        )
+        .catch(err=>console.eror(`Error Loading ${file}:`,err));
+       }
+
+       //load header and footer
+       document.addEventListener('DOMContentLoaded', function(){
+        loadComponent('header-container', 'header.html');
+        loadComponent('footer-container', 'footer.html');
+       });
+
+
+       //animation 
+        // Simple animation for page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.product-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 200 * index);
+            });
+        });
+    </script>
+
+     <script src="js/loadHeaderFooter.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+     position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .signature {
+    font-style: italic;
+}
