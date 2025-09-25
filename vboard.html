@@ -1,0 +1,121 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <title>Data Story</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--include css for footer and header-->
+    <link  rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/datastory.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    
+
+</head>
+<body>
+
+
+    <!--header-->
+    <section>
+        <div class="hero-content" id="header-container"></div>
+        </section>
+
+
+ <!--data section -->
+
+      <section>
+
+        <div class="data-story">
+            <div class="content-wrapper">
+            <aside class="sidebar"> 
+                <nav>
+
+                    <ul>
+                        <li><a href="#">Knime</a></li>
+                    
+                        <li><a href="#"> Popular TV</a></li>
+                        <li><a href="#">Screen Sizes</a></li>
+                        <li><a href="#">Brands Over Models</a></li>
+                        <li><a href="#">Power Consumption</a></li>
+                        <li><a href="#">Screen Sizes Correlation</a> </li>
+
+
+
+                        </ul>
+                </nav>
+
+
+            </aside>
+              <!-- Main Section -->
+                    <main class="visualisations">
+
+                        <!-- Example Data Story Block -->
+                        <section id="popular-tv" class="viz-block">
+                        <h2>Frequent TV sold in Australia</h2>
+                        <img src="images/frequent_tv.png" alt="Frequent TV sold in Australia chart" class="viz-img">
+                        <p class="explanation">
+                            From the dataset, LCD (LED) technology is the most popular with 177 units sold, 
+                            followed by LCD at 116, while OLED only accounts for 11. This suggests consumers 
+                            prefer budget-friendly and widely available LCD/LED TVs over premium OLED models.
+                        </p>
+                        </section>
+                
+                        <!-- Add more viz-block sections below for Screen Sizes, Brands, etc. -->
+                
+                    </main>
+                
+        </div>
+
+
+          <div>
+            </div>
+
+      </section>
+
+
+ 
+    
+     <!---footer-->
+     <section>
+        <div  class="hero-content" id="footer-container"></div>
+        </section>
+    
+        
+            <script>
+    
+           function loadComponent(id,file){
+            fetch(file).then(response=> response.text()).then(data=>
+                { document.getElementById(id).innerHTML=data;
+    
+                }
+            )
+            .catch(err=>console.eror(`Error Loading ${file}:`,err));
+           }
+    
+           //load header and footer
+           document.addEventListener('DOMContentLoaded', function(){
+            loadComponent('header-container', 'header.html');
+            loadComponent('footer-container', 'footer.html');
+           });
+    
+           
+        
+    
+    
+    
+    
+            </script>
+    
+             <script src="js/script.js"></script>
+    
+    
+    
+    </body>
+ </html>
+       
+
+
+

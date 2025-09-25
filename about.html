@@ -63,36 +63,18 @@
         </section>
     </main>
    
-    <!---footer-->
-    <section>
-    <div  class="hero-content" id="footer-container"></div>
-    </section>
+  
 
-   <script>
-
-       function loadComponent(id,file){
-        fetch(file).then(response=> response.text()).then(data=>
-            { document.getElementById(id).innerHTML=data;
-
-            }
-        )
-        .catch(err=>console.eror(`Error Loading ${file}:`,err));
-       }
-
-       //load header and footer
-       document.addEventListener('DOMContentLoaded', function(){
-        loadComponent('header-container', 'header.html');
-        loadComponent('footer-container', 'footer.html');
-       });
-
-       
+     <!---footer-->
+     <section>
+        <div  class="hero-content" id="footer-container"></div>
+        </section>
     
-
-
-
-
-        </script>
-        <script src="js/script.js"></script>
+        
+    
+       <script src="javascript/js1.js"></script>
+    
+    
 
 
 

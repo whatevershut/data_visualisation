@@ -1,0 +1,56 @@
+.data-story {
+    background-color: #b7c7a5; 
+    padding: 20px;
+  }/*    #dbead2*/
+  
+  .content-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .sidebar {
+    flex: 1;
+    background: #c2d9c1;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .visualisations {
+    flex: 3;
+  }
+  
+  .viz-block {
+    background: #f5f5f5;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  .viz-img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .explanation {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+  }
+  
