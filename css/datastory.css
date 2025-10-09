@@ -1,0 +1,161 @@
+/* datastory2.css – Refined soft green theme */
+
+/* General Page Background */
+body {
+    background-color: #d2dec3;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Layout */
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+    align-items: flex-start;
+    padding: 30px;
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    background: #c9d8b6; /* soft green tone */
+    border-radius: 16px;
+    padding: 20px 0;
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 14px 24px;
+    margin: 4px 12px;
+    color: #2f3d2f;
+    font-weight: 500;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: #b7c7a5;
+    color: white;
+  }
+  
+  .nav-link.active {
+    background-color: #7c9a7b; /* darker sage for active */
+    color: #fff;
+  }
+  
+  .nav-link i {
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+  
+  /* Visualization Section */
+  .visualisations {
+    background: #f9faf8;
+    border-radius: 16px;
+    padding: 25px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Headings */
+  .viz-header h2 {
+    color: #2f3d2f;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  /* Insight Box */
+  .insight-box {
+    background: #eaf5e2;
+    border-left: 4px solid #7c9a7b;
+    padding: 18px;
+    border-radius: 10px;
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .insight-box i {
+    color: #5f7a5f;
+    font-size: 1.3rem;
+  }
+  
+  .insight-box p {
+    color: #2f3d2f;
+    margin: 0;
+  }
+  
+  /* Explanation Text */
+  .explanation {
+    background: #f3f6ef;
+    padding: 18px;
+    border-radius: 10px;
+    border-left: 4px solid #b7c7a5;
+    color: #445044;
+    line-height: 1.6;
+  }
+  
+  /* Stat Cards */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 18px;
+    margin-top: 25px;
+  }
+  
+  .stat-item {
+    background: #7c9a7b;
+    color: #fff;
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .stat-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+  
+  /* Visualization Blocks */
+  .viz-block {
+    background: #fff;
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 1px solid #e3e8dc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .content-wrapper {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    .sidebar {
+      position: static;
+      margin-bottom: 20px;
+    }
+  }
+  
