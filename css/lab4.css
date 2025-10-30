@@ -1,0 +1,144 @@
+.responsive-svg-container {
+    margin: 0 auto; /* center */
+    width: 100%; /* fill parent width */
+    max-width: 1200px; /* cap max width */
+    justify-content: center;
+  margin-top: 20px;
+    }
+
+    svg {
+        background-color: #cbd5b1;  /* soft green background to match page */
+        border-radius: 8px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+      }
+
+    /* css/lab2-chart.css */
+/* Styling for Lab 2 Chart Page */
+
+.lab2-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.lab2-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.lab2-header h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.lab2-header .subtitle {
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.chart-section {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.chart-section h2 {
+    color: #34495e;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #ecf0f1;
+    padding-bottom: 0.5rem;
+}
+
+.responsive-svg-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    background: white;
+    border-radius: 6px;
+    padding: 1.5rem;
+    border: 1px solid #e0e0e0;
+}
+
+.info-panel {
+    background: #f8f9fa;
+    border-left: 4px solid #3498db;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+}
+
+.info-panel h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.info-panel p {
+    color: #5d6d7e;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.data-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.highlight-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.highlight-card .number {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.highlight-card .label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Chart specific styles */
+.bar {
+    transition: all 0.3s ease;
+}
+
+.bar:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .lab2-container {
+        padding: 1rem;
+    }
+    
+    .lab2-header h1 {
+        font-size: 2rem;
+    }
+    
+    .chart-section {
+        padding: 1rem;
+    }
+    
+    .data-highlights {
+        grid-template-columns: 1fr;
+    }
+}

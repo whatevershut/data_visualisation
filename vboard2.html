@@ -1,0 +1,301 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <title>TV Market Analysis - Data Story</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Include CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/datastory.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Header -->
+    <section>
+        <div class="hero-content" id="header-container"></div>
+    </section>
+
+    <!-- Data Story Section -->
+    <section class="data-story-hero">
+        <div class="hero-overlay">
+            <div class="container">
+                <h1>TV Market Analysis</h1>
+                <p>Insights into consumer preferences and market trends in Australia's television industry</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Section -->
+    <section class="data-story-section">
+        <div class="container">
+            <div class="content-wrapper">
+                <aside class="sidebar"> 
+                    <div class="sidebar-header">
+                        <h3>Analysis Sections</h3>
+                        <div class="active-indicator"></div>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#knime"  data-target="knime" class="nav-link active"><i class="fas fa-project-diagram"></i>Knime Workflow</a></li>
+                            <li><a href="#popular-tv" data-target="popular-tv" class="nav-link"><i class="fas fa-chart-bar"></i>Popular TV Technologies</a></li>
+                            <li><a href="#screen-sizes" data-target="screen-sizes" class="nav-link"><i class="fas fa-tv"></i>Screen Sizes</a></li>
+                            <li><a href="#brands-models2"  data-target="brands-models2" class="nav-link"><i class="fas fa-tags"></i>Brands vs Models</a></li>
+                            <li><a href="#power-consumption" data-target="power-consumption" class="nav-link"><i class="fas fa-bolt"></i>Power Consumption</a></li>
+                            <li><a href="#screen-correlation"  data-target="screen-correlation" class="nav-link"><i class="fas fa-chart-line"></i>Screen Size Correlation</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <!-- Main Section -->
+                <main class="visualisations">
+                    <!-- Knime Section -->
+                    <section id="knime" class="viz-block active">
+                        <div class="viz-header">
+                            <h2><i class="fas fa-project-diagram"></i>Data Processing Workflow</h2>
+                            <span class="viz-badge">Methodology</span>
+                        </div>
+                        <div class="viz-content">
+                            <img src="images/knime.png" alt="Knime data processing workflow" class="viz-img">
+                            <p class="explanation">
+                                 Knime is used for data cleaning, data transformation and data visualisation to give insights into TV market trends across Australia based on the given questions in lab.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Popular TV Section -->
+                    <section id="popular-tv" class="viz-block">
+                        <div class="viz-header">
+                            <h2><i class="fas fa-chart-bar"></i>TV Technology Market Share in Australia</h2>
+                            <span class="viz-badge">Key Insight</span>
+                        </div>
+                        <div class="viz-content">
+                            <img src="images/frequent_tv2.png" alt="Frequent TV sold in Australia chart" class="viz-img">
+                            <div class="insight-box">
+                                <i class="fas fa-lightbulb"></i>
+                                <p><strong>Market Insight:</strong> LCD (LED) technology is the most popular  with 177 units sold while OLED is the least in the market with total of 11 units sold</p>
+                            </div>
+                            <p class="explanation">
+                                The data reveals a strong consumer preference for budget-friendly LCD/LED technologies. This data shows that the consumers prefer affordability over premium technologies.
+                            </p>
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <span class="stat-number">177</span>
+                                    <span class="stat-label">LCD (LED) Units</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">116</span>
+                                    <span class="stat-label">LCD Units</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">11</span>
+                                    <span class="stat-label">OLED Units</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="screen-sizes" class="viz-block">
+                        <div class="viz-header">
+                            <h2><i class="fas fa-ruler-combined"></i>TV Screen Size Distribution in the Australian Market</h2>
+                            <span class="viz-badge">Consumer Preference</span>
+                        </div>
+                    
+                        <div class="viz-content">
+                            <img src="images/screen_sizes.png" alt="TV Screen Size Distribution Chart" class="viz-img">
+                            
+                            <div class="insight-box">
+                                <i class="fas fa-lightbulb"></i>
+                                <div>
+                                    <p><strong>Market Insight:</strong> The highest demand for TV Screen is at 164 cm and the average demand falls between 108 cm to 190 cm</p>
+                                </div>
+                            </div>
+                    
+                    
+                            <div class="size-comparison">
+                                <h3><i class="fas fa-balance-scale"></i>Screen Size Distribution</h3>
+                                <div class="size-bars">
+                                    <div class="size-bar">
+                                        <span class="size-label">Small (≤107 cm)</span>
+                                        <div class="bar-container">
+                                            <div class="bar-fill" style="width: 15%"></div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="size-bar">
+                                        <span class="size-label">Medium (108-190 cm)</span>
+                                        <div class="bar-container">
+                                            <div class="bar-fill" style="width: 68%"></div>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="size-bar">
+                                        <span class="size-label">Large (≥191 cm)</span>
+                                        <div class="bar-container">
+                                            <div class="bar-fill" style="width: 17%"></div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                          
+                    
+                            <p class="explanation">
+                               The screen size analysis shows that the Australian market prefer the standard TV Screen to be in the range of between 108 CM - 190 CM with the most in-demand TV screen size is 164 CM.
+                                The average range between 108 CM - 190 CM demand of the screen sizes could be used as a practical considerations for the consumers' living room sizes and space to fit in the 
+                               television. 
+                            </p>
+                        </div>
+                    </section>
+
+
+
+                    <section id="brands-models2" class="viz-block">
+                        <div class="viz-header">
+                            <h2><i class="fas fa-crown"></i>Brand with the highest number of models in the Australian TV Market</h2>
+                            <span class="viz-badge">Market Leadership</span>
+                        </div>
+                    
+                        <div class="viz-content">
+                            <img src="images/highest_models.png" alt="Brand Model Distribution Across Australian TV Market" class="viz-img">
+                            
+                            <div class="insight-box">
+                                <i class="fas fa-lightbulb"></i>
+                                <div>
+                                    <p><strong>Market Insight:</strong>This data indicates that the Australian Markets prefer LG Brand when it comes to Television with it being the highest to have
+                                        644 total modules in comparison with other brands</p>
+                                </div>
+                            </div>
+                    
+                       </div>
+                    
+                    
+                            <p class="explanation">
+                                The brand model distribution reveals a highly concentrated market where LG produced 644 models for their television production units, exceeding othe brands competitors. 
+                                This information could be useful for the technology market probably due to the marketing stratergy applied by LG for their significant  electronics influence in 
+                                the Australian market that effect the buyers personal choice of brand. 
+                            </p>
+                               
+                       
+                    </section>
+
+                    <section id="power-consumption" class="viz-block">
+                        <div class="viz-header">
+                            <h2><i class="fas fa-bolt"></i>Power Savings Analysis</h2>
+                            <span class="viz-badge">Energy Performance</span>
+                        </div>
+                    
+                        <div class="viz-content">
+                            <img src="images/power.png" alt="Power Consumption by Screen Technology" class="viz-img">
+                            
+                            <div class="insight-box">
+                                <i class="fas fa-lightbulb"></i>
+                                <div>
+                                    <p><strong> Key Finding:</strong> LCD technology leads in energy savings at 87.29 kWh.</p>
+                                </div>
+                            </div>
+                    
+                    
+                            <div class="key-takeaway">
+                                <h4><i class="fas fa-check-circle"></i> Bottom Line</h4>
+                                <p>LCD technology offers the optimal balance of performance and energy savings, in comparison with LED and OLED technologies</p>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section id="screen-correlation2" class="viz-block">
+                        <div class="viz-header">
+                            <h2><i class="fas fa-bolt"></i>Screen Sizes Correlation with Power & Rating </h2>
+                            <span class="viz-badge">Correlation Analysis</span>
+                        </div>
+
+                        <div class="viz-content">
+                            <img src="images/size&power.png" alt="Power Consumption by Screen Technology" class="viz-img">
+                        </div>
+
+                        <div class="viz-content">
+                            <img src="images/size&rating.png" alt="Power Consumption by Screen Technology" class="viz-img">
+                        </div>
+                    </section>
+
+                    <section id="screen-correlation" class="viz-block">
+                        <div class="viz-header">
+                            <h2><i class="fas fa-project-diagram"></i>Screen Size Correlation Analysis</h2>
+                            <span class="viz-badge">Relationship Insights</span>
+                        </div>
+                    
+                        <div class="correlation-container">
+                            <!-- Power Consumption Correlation -->
+                            <div class="correlation-section">
+                                <div class="correlation-header">
+                                    <h3><i class="fas fa-bolt"></i>Screen Size vs Power Consumption</h3>
+                                    <span class="correlation-badge">Energy Impact</span>
+                                </div>
+                                <div class="viz-content">
+                                    <img src="images/size&power.png" alt="Screen Size vs Power Consumption Correlation" class="viz-img">
+                                    
+                                    <div class="insight-box">
+                                        <i class="fas fa-chart-line"></i>
+                                        <div>
+                                            <p><strong>Key Finding:</strong> The bigger the screen size the higher the amount of energy used when active 
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                    
+                                </div>
+                            </div>
+                    
+                            <!-- Rating Correlation -->
+                            <div class="correlation-section">
+                                <div class="correlation-header">
+                                    <h3><i class="fas fa-star"></i>Screen Size vs Customer Rating</h3>
+                                    <span class="correlation-badge">Customer Satisfaction</span>
+                                </div>
+                                <div class="viz-content">
+                                    <img src="images/size&rating.png" alt="Screen Size vs Customer Rating Correlation" class="viz-img">
+                                    
+                                    <div class="insight-box">
+                                        <i class="fas fa-chart-line"></i>
+                                        <div>
+                                            <p><strong>Key Finding:</strong>  Small correlation but the hypothesis is : The bigger the screen size the higher the rating
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    
+                      
+                    </section>
+
+                    <!-- Add more viz-block sections for other analyses /Market Insight:</strong>This data illustrates that LCD uses least amount of power when in used with the 
+                                    average of 87.29 KWH --> 
+                    
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section>
+        <div class="hero-content" id="footer-container"></div>
+    </section>
+
+    <script src="javascript/js1.js"></script>
+    <script src="javascript/js2.js"></script>
+
+
+    
+
+</body>
+</html>
