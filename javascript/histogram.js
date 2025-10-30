@@ -22,7 +22,7 @@ const tooltip = d3.select("body")
 let tvData = [];
 
 // Load data
-d3.csv("data/EX6_TVdata.csv").then(data => {
+d3.csv("data/Ex6_TVdata.csv").then(data => {
   data.forEach(d => {
     d.energyConsumption = +d.energyConsumption;
     d.brand = d.brand;
