@@ -1,0 +1,148 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <title>T05: Multi-Chart Webpage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Include css for footer and header -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style6.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <section>
+        <div class="hero-content" id="header-container"></div>
+    </section>
+    
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Page Title -->
+        <div class="page-header">
+            <h1>LAB 6 Analysis</h1>
+            <p>Interactive visualization of TV data energy consumption data gathered from Lab 1 file</p>
+        </div>
+        
+        <!-- Dashboard Layout -->
+        <div class="dashboard">
+            <!-- Left Side Navigation -->
+            <nav class="chart-nav">
+                <h3>Chart Selection on TV Data Energy</h3>
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link active" data-chart="scatterplot">Scatter Plot</a></li>
+                    <li><a href="#" class="nav-link" data-chart="donut">Donut Chart</a></li>
+                    <li><a href="#" class="nav-link" data-chart="barchart">Bar Chart</a></li>
+                    <li><a href="#" class="nav-link" data-chart="linechart">Line Chart</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Chart Display Area -->
+            <div class="chart-area">
+                <!-- SCATTER PLOT CHART 1 -->
+                <section class="chart-section active" id="scatterplot-section">
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <h2>Energy Consumption vs Star Rating</h2>
+                            <p class="chart-description">This scatter plot shows the relationship between energy consumption and efficiency star ratings thats show the pattern 
+                                of the average power consumption has the most rating with the assumption that customer prioritise power saving TV Technologies<br>
+                            </p>
+                        </div>
+                        <div class="chart-spacer"></div>
+
+                        <div id="scatterplot" class="chart-visualization">
+                            <!-- scatter plot chart rendered here -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- DONUT-CHART CHART 2  ENERGY CONSUMPTION ON DIFFERENT SCREEN TECHNOLOGIES ALL TVS -->
+                <!-- DONUT-CHART CHART 2 -->
+                <section class="chart-section" id="donut-section">
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <h2>Energy Consumption by Screen Technology</h2>
+                            <p class="chart-description">This donut chart shows the distribution of energy consumption across different TV screen technologies <br>
+                            with LED being the highest at consuming power
+                            </p>                        </div>
+                        <div id="donut-chart" class="chart-visualization">
+                            <!-- donut chart will be rendered here -->
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- BAR CHART 3 -->
+                <section class="chart-section" id="barchart-section">
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <h2>Energy Consumption of 55-inch TV Screen Technologies</h2>
+                            <p class="chart-description">This bar chart compares energy consumption across different screen technologies for 55-inch TVs <br>
+                            with LCD being the lowest </p>
+                        </div>
+                        <div class="chart-spacer"></div>
+
+
+                        <div id="bar-chart" class="chart-visualization">
+                            <!-- bar chart rendered here -->
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- LINE CHART 4 -->
+                <section class="chart-section" id="linechart-section">
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <h2>Price Trends Over Years</h2>
+                            <p class="chart-description">This line chart shows how power prices changes from 1998 to 2024 </p>
+                        </div>
+                        <div id="line-chart" class="chart-visualization">
+                            <!-- line chart rendered here -->
+                        </div>
+                    </div>
+                </section>
+
+
+        <!-- Additional content sections -->
+        <section class="info-section">
+            <div class="info-cards">
+                <div class="info-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Data Analysis</h3>
+                    <p>Comprehensive analysis of energy consumption patterns across different product categories.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Efficiency Ratings</h3>
+                    <p>Understanding how star ratings correlate with actual energy usage and efficiency.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Energy Saving</h3>
+                    <p>Insights to help consumers make informed decisions about energy-efficient products.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+   
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="javascript/scatterplot.js"></script>
+    <script src="javascript/donutchart.js"></script>
+    <script src="javascript/barchart.js"></script>
+    <script src="javascript/linechart.js"></script>
+    <script src="javascript/js1.js"></script>
+    <script src="javascript/chart.js"></script>
+
+     <!-- Footer -->
+     <section>
+        <div class="hero-content" id="footer-container"></div>
+    </section>
+ 
+</body>
+</html>
