@@ -1,0 +1,70 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <title>T05: Multi-Chart Webpage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Include css for footer and header -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/histogram.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+     <!-- Header -->
+     <section>
+        <div class="hero-content" id="header-container"></div>
+    </section>
+
+
+
+  <main class="main-container">
+    <section>
+      <div class="page-header">
+        <h1>LAB 6.2 — Interactive Histogram (Filtering)</h1>
+        <p>Explore the energy consumption distribution for different TV screen technologies.</p>
+      </div>
+
+      <!-- Filter buttons -->
+      <div id="filter-buttons" class="button-container">
+        <button class="filter-btn active" data-tech="All">All</button>
+        <button class="filter-btn" data-tech="LED">LED</button>
+        <button class="filter-btn" data-tech="LCD">LCD</button>
+        <button class="filter-btn" data-tech="OLED">OLED</button>
+      </div>
+
+      <!-- Histogram container -->
+      <div id="histogram"></div>
+    </section>
+
+    <!-- Scatterplot container -->
+        <section>
+            <div class="page-header">
+            <h2>Energy Consumption vs Star Rating</h2>
+            <p>Compare energy efficiency (star rating) and energy consumption across different TV screen technologies.</p>
+            </div>
+            <div id="scatterplot"></div>
+        </section>
+
+
+  </main>
+
+
+
+
+ <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="javascript/js1.js"></script>
+  <script src="javascript/histogram.js"></script>
+  <script src="javascript/scatterplot2.js"></script>
+
+
+
+   <!-- Footer -->
+   <section>
+    <div class="hero-content" id="footer-container"></div>
+</section>
+</body>
+</html>

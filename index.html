@@ -26,7 +26,7 @@
     <section class="hero hero-welcome">
         <div class="hero-content">
            
-            <h2><span class="italic">Lab 1, </span> <span class="welcome">WELCOME</span></h2>
+            <h2><span class="italic">Lab 3 </span> <BR><span class="welcome">WELCOME T05_06</span></h2>
         </div>
     </section>
 
@@ -49,33 +49,11 @@
     <div  class="hero-content" id="footer-container"></div>
     </section>
 
-    
-        <script>
-
-       function loadComponent(id,file){
-        fetch(file).then(response=> response.text()).then(data=>
-            { document.getElementById(id).innerHTML=data;
-
-            }
-        )
-        .catch(err=>console.eror(`Error Loading ${file}:`,err));
-       }
-
-       //load header and footer
-       document.addEventListener('DOMContentLoaded', function(){
-        loadComponent('header-container', './header.html');
-        loadComponent('footer-container', './footer.html');
-       });
-
-       
-    
-
-
 
 
         </script>
 
-         <script src="js/script.js"></script>
+         <script src="javascript/js1.js"></script>
 
 
 

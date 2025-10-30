@@ -1,0 +1,352 @@
+/*styling for lab6*/
+
+/* Dashboard Layout */
+.dashboard {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* Navigation Styles */
+.chart-nav {
+    flex: 0 0 250px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+.chart-nav h3 {
+    color: #2c3e2f;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3a4e35;
+    font-size: 1.3rem;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #555;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    background-color: #e9ecef;
+    color: #2c3e2f;
+    border-left-color: #3a4e35;
+}
+
+.nav-link.active {
+    background-color: #3a4e35;
+    color: white;
+    border-left-color: #2c3e2f;
+}
+
+/* Chart Area */
+.chart-area {
+    flex: 1;
+}
+
+.chart-section {
+    display: none;
+}
+
+.chart-section.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Graphs */
+#scatterplot {
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: 0 auto;
+}
+
+.dot:hover {
+    fill: orange;
+    transform: scale(1.3);
+    transition: transform 1000s ease;
+}
+
+
+
+.chart-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.chart-visualization {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  margin: 20px auto;
+  border: none;
+  border-radius: 1px;
+  overflow: hidden;
+  
+}
+
+.chart-header,
+.chart-footer {
+    text-align: center;
+}
+
+.chart-visualization svg {
+    
+        transform: none;        
+        margin-top: -90px;         
+        display: block;
+           
+}
+
+.chart-spacer {
+    height: 80px;
+    width: 100%;
+}
+
+
+
+/* Donut Chart Specific Styles */
+.donut-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donut-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+}
+
+.legend-color {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+}
+
+
+/* Fix for donut chart positioning - DECREASED HEIGHT */
+#donut-chart {
+    min-height: 400px; /* Decreased from 550px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0; /* Reduced padding */
+}
+
+/* Ensure chart visualization has proper spacing */
+.chart-visualization {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 450px;          /* ⬆ Increased height */
+    margin: 30px auto;      /* ⬆ Slightly larger vertical margin */
+    overflow: visible;      /* ⬆ Allow legend to show fully */
+  }
+  
+/* Specific fixes for donut chart section */
+#donut-section .chart-container {
+    padding-bottom: 20px; /* Reduced from 40px */
+}
+
+#donut-section .chart-visualization {
+    height: auto;
+    min-height: 350px; /* Decreased from 500px */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px; /* Reduced from 20px */
+}
+
+/* Ensure the donut chart SVG is properly contained */
+#donut-chart svg {
+    display: block;
+    margin: 0 auto;
+    max-height: 350px; /* Added max-height constraint */
+}
+
+/* Adjust legend positioning */
+.donut-legend {
+    margin-top: 20px !important; /* Reduced from 30px */
+    padding: 10px 15px; /* Reduced vertical padding */
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    max-width: 80%;
+    margin: 0 auto;
+    height: auto;
+}
+
+/* Improve donut chart text readability */
+#donut-chart text {
+    font-family: Arial, sans-serif;
+    user-select: none;
+}
+
+/* Ensure tooltips don't interfere */
+.donut-tooltip {
+    z-index: 1000;
+    pointer-events: none;
+}
+
+/* Optional: Reduce overall chart container height */
+.chart-container {
+    min-height: 450px; /* If you had this set higher, reduce it */
+}
+
+
+/*BAR CHART*/
+.tooltip {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+#bar-chart {
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+/*LINE CHART*/
+#line-chart {
+    margin: 50px auto;
+    max-width: 900px;
+  }
+  
+  #line-chart svg {
+    overflow: visible;
+  }
+  
+  .line {
+    transition: all 0.3s ease;
+  }
+  
+  .line:hover {
+    stroke-width: 3.5;
+  }
+
+  .line-tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    pointer-events: none;
+    z-index: 9999; /* ensures it stays on top */
+    transition: opacity 0.2s ease;
+  }
+  
+  .line {
+    transition: opacity 0.3s;
+  }
+  .legend-item.inactive rect {
+    opacity: 0.3;
+  }
+  
+  
+
+
+
+/*
+
+const donutTooltipCSS = `
+.donut-tooltip {
+    position: absolute;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 5px;
+    pointer-events: none;
+    font-size: 12px;
+    z-index: 1000;
+}
+
+
+
+const style = document.createElement('style');
+style.textContent = donutTooltipCSS;
+document.head.appendChild(style);*/
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+    
+    .chart-nav {
+        flex: none;
+        width: 100%;
+    }
+    
+    .nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .nav-list li {
+        flex: 1;
+        min-width: 120px;
+        margin-bottom: 0;
+    }
+    
+    .nav-link {
+        text-align: center;
+        border-left: none;
+        border-bottom: 3px solid transparent;
+    }
+    
+    .nav-link.active {
+        border-left: none;
+        border-bottom-color: #2c3e2f;
+    }
+    
+    .nav-link:hover {
+        border-left: none;
+        border-bottom-color: #3a4e35;
+    }
+}
